@@ -2,33 +2,49 @@
       <div>
     <div class="top-row">
       <div class="top part">
-        <img v-bind:src="availableParts.heads[selectedHeadIndex].src" title="head" alt=""/>
-        <button v-on:click="selectPreviousHead()" class="prev-selector">&#9668;</button>
-        <button v-on:click="selectNextHead()" class="next-selector">&#9658;</button>
+        <!-- <img v-bind:src="availableParts.heads[selectedHeadIndex].src" title="head" alt=""/> -->
+         <img :src="availableParts.heads[selectedHeadIndex].src" title="head" alt=""/>
+        <!-- <button v-on:click="selectPreviousHead()" class="prev-selector">&#9668;</button>
+        <button v-on:click="selectNextHead()" class="next-selector">&#9658;</button> -->
+        <button @click="selectPreviousHead()" class="prev-selector">&#9668;</button>
+        <button @click="selectNextHead()" class="next-selector">&#9658;</button>
       </div>
     </div>
     <div class="middle-row">
       <div class="left part">
-        <img v-bind:src="availableParts.arms[selectedArmIndexL].src" title="left arm" alt=""/>
+        <!-- <img v-bind:src="availableParts.arms[selectedArmIndexL].src" title="left arm" alt=""/>
         <button v-on:click="selectPreviousArmL()" class="prev-selector">&#9650;</button>
-        <button v-on:click="selectNextArmL()" class="next-selector">&#9660;</button>
+        <button v-on:click="selectNextArmL()" class="next-selector">&#9660;</button> -->
+        <img :src="availableParts.arms[selectedArmIndexL].src" title="left arm" alt=""/>
+        <button @click="selectPreviousArmL()" class="prev-selector">&#9650;</button>
+        <button @click="selectNextArmL()" class="next-selector">&#9660;</button>
       </div>
       <div class="center part">
-        <img v-bind:src="availableParts.torsos[selectedTorsoIndex].src" title="left arm" alt=""/>
+        <!-- <img v-bind:src="availableParts.torsos[selectedTorsoIndex].src" title="left arm"
+         alt=""/>
         <button v-on:click="selectPreviousTorso()" class="prev-selector">&#9668;</button>
-        <button v-on:click="selectNextTorso()" class="next-selector">&#9658;</button>
+        <button v-on:click="selectNextTorso()" class="next-selector">&#9658;</button> -->
+        <img :src="availableParts.torsos[selectedTorsoIndex].src" title="left arm" alt=""/>
+        <button @click="selectPreviousTorso()" class="prev-selector">&#9668;</button>
+        <button @click="selectNextTorso()" class="next-selector">&#9658;</button>
       </div>
       <div class="right part">
-        <img v-bind:src="availableParts.arms[selectedArmIndexR].src" title="left arm" alt=""/>
+        <!-- <img v-bind:src="availableParts.arms[selectedArmIndexR].src" title="right arm" alt=""/>
         <button v-on:click="selectPreviousArmR()" class="prev-selector">&#9650;</button>
-        <button v-on:click="selectNextArmR()" class="next-selector">&#9660;</button>
+        <button v-on:click="selectNextArmR()" class="next-selector">&#9660;</button> -->
+        <img :src="availableParts.arms[selectedArmIndexR].src" title="right arm" alt=""/>
+        <button @click="selectPreviousArmR()" class="prev-selector">&#9650;</button>
+        <button @click="selectNextArmR()" class="next-selector">&#9660;</button>
       </div>
     </div>
     <div class="bottom-row">
       <div class="bottom part">
-        <img v-bind:src="availableParts.bases[selectedBaseIndex].src" title="left arm" alt=""/>
+        <!-- <img v-bind:src="availableParts.bases[selectedBaseIndex].src" title="left arm" alt=""/>
         <button v-on:click="selectPreviousBase()" class="prev-selector">&#9668;</button>
-        <button v-on:click="selectNextBase()" class="next-selector">&#9658;</button>
+        <button v-on:click="selectNextBase()" class="next-selector">&#9658;</button> -->
+        <img :src="availableParts.bases[selectedBaseIndex].src" title="left arm" alt=""/>
+        <button @click="selectPreviousBase()" class="prev-selector">&#9668;</button>
+        <button @click="selectNextBase()" class="next-selector">&#9658;</button>
       </div>
     </div>
   </div>
